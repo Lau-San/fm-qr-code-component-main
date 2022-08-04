@@ -6,6 +6,51 @@ $grayish-blue: hsl(220, 15%, 55%);
 $dark-blue: hsl(218, 44%, 22%);
 
 body {
+	background: $light-gray;
+	font-family: 'Outfit', sans-serif;
 	font-size: 15px;
 	margin: 0;
+}
+
+h2 { margin: 0; }
+
+p { margin: 0 }
+
+.wrapper {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background: $white;
+	border-radius: 20px;
+	box-shadow: 0 20px 40px hsla(220, 15%, 55%, 15%);
+	width: 292px;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		color: $dark-blue;
+		font-size: 1.48em;
+		text-align: center;
+		margin: 1em auto 0 auto;
+		max-width: 90%;
+	}
+
+	p {
+		color: $grayish-blue;
+		font-size: 1.02em;
+		text-align: center;
+		margin: 1em auto 2em auto;
+		max-width: 90%;
+	}
+}
+
+.qr-img {
+	border-radius: 10px;
+	width: 100%;
 }
